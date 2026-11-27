@@ -1,3 +1,12 @@
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -21,8 +30,9 @@
 
   /* Titres spécifiques du design */
   .hero__headline {
-    font-size: clamp(2rem, 3.8vw, 3.25rem);
-    line-height: 1.15;
+    font-size: clamp(1.6rem, 3vw, 2.6rem);
+    line-height: 1.2;
+    text-transform: uppercase;
   }
   .section-title,
   .section-title--light {
@@ -39,8 +49,18 @@
   .role__lead,
   .statement__text,
   .about__highlight {
-    font-size: clamp(1.35rem, 2.2vw, 1.9rem);
-    line-height: 1.35;
+    font-size: clamp(1.15rem, 1.8vw, 1.55rem);
+    line-height: 1.4;
+  }
+  .statement__text {
+    text-transform: uppercase;
+  }
+  .role__body .section-title {
+    font-size: clamp(1.3rem, 2vw, 1.8rem);
+    text-transform: uppercase;
+  }
+  .footer__title {
+    text-transform: uppercase;
   }
   .about-hero__name {
     font-size: clamp(2rem, 3.5vw, 2.8rem);
@@ -61,15 +81,22 @@
     h1 { font-size: 2rem; }
     h2 { font-size: 1.55rem; }
     h3 { font-size: 1.1rem; }
-    .hero__headline { font-size: 2rem; }
+    .hero__headline { font-size: 1.6rem; }
     .section-title,
     .section-title--light { font-size: 1.55rem; }
     .role__lead,
     .statement__text,
-    .about__highlight { font-size: 1.35rem; }
+    .about__highlight { font-size: 1.15rem; }
+    .role__body .section-title { font-size: 1.3rem; }
     .about-hero__name { font-size: 2rem; }
     .footer__title { font-size: 1.8rem; }
   }
+
+  .section-title--compact {
+    font-size: clamp(1.45rem, 2.4vw, 2.1rem);
+    line-height: 1.2;
+  }
+
 </style>
 
 </head>
@@ -142,7 +169,7 @@
   <!-- ============ ENJEUX / SITUATIONS ============ -->
   <section class="situations" id="situations">
     <div class="wrap">
-      <h2 class="section-title" data-reveal>Votre organisation fait face à l'un de ces enjeux ?</h2>
+      <h2 class="section-title section-title--compact" data-reveal>Votre organisation fait face à l'un de ces enjeux ?</h2>
       <div class="situations__grid">
         <article class="situation-card" data-reveal>
           <span class="situation-card__index">01</span>
@@ -271,7 +298,6 @@
               <li>Stress au travail et équilibre vie pro / vie perso</li>
               <li>Inclusion et diversité au travail</li>
               <li>Marque employeur et personal branding / posture pro</li>
-              <li>Formations obligatoires CSE / SSCT</li>
             </ul>
             <a href="https://calendly.com/contact-mtragency/appel-meriem-tiar" class="link-arrow" target="_blank" rel="noopener">Demander un programme →</a>
           </div>
@@ -366,12 +392,12 @@
             <span class="stat__label">apprenants formés en écoles et organismes et jurys d'examen</span>
           </div>
           <div>
-            <span class="stat__headline">Excellence relationnelle FR / EN</span>
-            <span class="stat__label">Certifiée en excellence de service (2022) auprès de plus de 4 500 clients internationaux par an</span>
+            <span class="stat__headline">Master en stratégie</span>
+            <span class="stat__label">Master 2 Stratégie de Marque (Sup de Pub) et certification TOT (30h) — Train the Trainers (2025)</span>
           </div>
           <div>
-            <span class="stat__headline">Bac+5 et Certification TOT (30h)</span>
-            <span class="stat__label">Master 2 Stratégie de Marque (Sup de Pub) et certification Train the Trainers (2025)</span>
+            <span class="stat__headline">Certification en pédagogie active</span>
+            <span class="stat__label">Conception et animation de formations, ateliers et mises en situation</span>
           </div>
         </div>
 
