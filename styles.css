@@ -844,3 +844,13 @@ body.intro-active{overflow:hidden;}
 
 /* ========== MAGNETIC BUTTONS ========== */
 .btn{will-change:transform;}
+
+
+/* ========== SERVICES : FOND NOIR AU SURVOL ========== */
+@media (hover: hover) and (pointer: fine) {
+  .service-card:hover .service-card__overlay {
+    background: rgba(0, 0, 0, 0.88) !important;
+    opacity: 1 !important;
+    transition: background .3s ease, opacity .3s ease;
+  }
+}
