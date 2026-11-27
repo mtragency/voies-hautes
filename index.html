@@ -1,1203 +1,414 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Voies Hautes — Transformation professionnelle, Prévention RPS &amp; Alignement</title>
-  <meta name="description" content="Consultante, auditrice, formatrice et coach en transformation professionnelle. Prévention des RPS, DUERP, communication, inclusion, marque employeur et alignement des postures." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg-primary: #FAF8F5;
-      --bg-secondary: #F2EDE6;
-      --bg-card: #FFFFFF;
-      --bg-dark: #18221E;
-      --bg-dark-soft: #212E29;
-      --text-primary: #1B2420;
-      --text-secondary: #535E59;
-      --text-light: #F7F5F0;
-      --accent: #2C5545;
-      --accent-hover: #1E3D31;
-      --accent-warm: #B88A44;
-      --accent-soft: rgba(44, 85, 69, 0.08);
-      --border: rgba(27, 36, 32, 0.11);
-      --border-light: rgba(247, 245, 240, 0.14);
-      --font-serif: 'Cormorant Garamond', Georgia, serif;
-      --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-      --radius: 14px;
-      --shadow-sm: 0 6px 24px rgba(24, 34, 30, 0.04);
-      --shadow-md: 0 18px 44px rgba(24, 34, 30, 0.08);
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: var(--font-sans);
-      background-color: var(--bg-primary);
-      color: var(--text-primary);
-      line-height: 1.65;
-      font-weight: 400;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    .container {
-      width: 100%;
-      max-width: 1160px;
-      margin: 0 auto;
-      padding: 0 24px;
-    }
-
-    /* Header & Navigation */
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: rgba(250, 248, 245, 0.92);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--border);
-    }
-
-    .nav-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      min-height: 82px;
-      gap: 20px;
-    }
-
-    .brand {
-      display: flex;
-      flex-direction: column;
-      gap: 2px;
-    }
-
-    .brand-name {
-      font-family: var(--font-serif);
-      font-size: 1.85rem;
-      font-weight: 600;
-      letter-spacing: 0.01em;
-      color: var(--text-primary);
-      line-height: 1.1;
-    }
-
-    .brand-tagline {
-      font-size: 0.75rem;
-      color: var(--text-secondary);
-      letter-spacing: 0.02em;
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 26px;
-      list-style: none;
-    }
-
-    .nav-links a {
-      font-size: 0.88rem;
-      font-weight: 500;
-      color: var(--text-secondary);
-      transition: color 0.2s ease;
-    }
-
-    .nav-links a:hover {
-      color: var(--accent);
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      padding: 13px 24px;
-      border-radius: 999px;
-      font-size: 0.88rem;
-      font-weight: 500;
-      letter-spacing: 0.01em;
-      transition: all 0.25s ease;
-      cursor: pointer;
-      border: 1px solid transparent;
-    }
-
-    .btn-primary {
-      background-color: var(--accent);
-      color: #FFFFFF;
-    }
-
-    .btn-primary:hover {
-      background-color: var(--accent-hover);
-      transform: translateY(-1px);
-      box-shadow: 0 8px 20px rgba(44, 85, 69, 0.22);
-    }
-
-    .btn-outline {
-      background-color: transparent;
-      border-color: var(--border);
-      color: var(--text-primary);
-    }
-
-    .btn-outline:hover {
-      border-color: var(--accent);
-      color: var(--accent);
-      background-color: rgba(44, 85, 69, 0.03);
-    }
-
-    .btn-sm {
-      padding: 10px 18px;
-      font-size: 0.83rem;
-    }
-
-    /* Typography Helpers */
-    .eyebrow {
-      display: inline-block;
-      font-size: 0.76rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.14em;
-      color: var(--accent);
-      margin-bottom: 14px;
-    }
-
-    .eyebrow-light {
-      color: #C9A96E;
-    }
-
-    h1, h2, h3 {
-      font-family: var(--font-serif);
-      font-weight: 500;
-      line-height: 1.16;
-      color: var(--text-primary);
-    }
-
-    h1 {
-      font-size: clamp(2.55rem, 5vw, 4.1rem);
-      letter-spacing: -0.01em;
-      margin-bottom: 24px;
-    }
-
-    h2 {
-      font-size: clamp(2rem, 3.6vw, 3rem);
-      margin-bottom: 20px;
-    }
-
-    h3 {
-      font-size: 1.48rem;
-      margin-bottom: 12px;
-    }
-
-    section {
-      padding: 96px 0;
-    }
-
-    /* Hero */
-    .hero {
-      padding: 92px 0 104px;
-      background:
-        radial-gradient(circle at 88% 18%, rgba(44, 85, 69, 0.08), transparent 44%),
-        radial-gradient(circle at 10% 85%, rgba(184, 138, 68, 0.08), transparent 40%),
-        var(--bg-primary);
-      border-bottom: 1px solid var(--border);
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.25fr 0.75fr;
-      gap: 56px;
-      align-items: center;
-    }
-
-    .hero-subtitle {
-      font-size: 1.12rem;
-      color: var(--text-secondary);
-      max-width: 650px;
-      margin-bottom: 36px;
-      line-height: 1.72;
-    }
-
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-      align-items: center;
-    }
-
-    .hero-panel {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 32px;
-      box-shadow: var(--shadow-md);
-    }
-
-    .hero-panel-label {
-      font-size: 0.74rem;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: var(--accent-warm);
-      font-weight: 600;
-      margin-bottom: 14px;
-      display: block;
-    }
-
-    .hero-panel h3 {
-      font-size: 1.42rem;
-      margin-bottom: 16px;
-    }
-
-    .hero-list {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      margin-bottom: 22px;
-    }
-
-    .hero-list li {
-      font-size: 0.9rem;
-      color: var(--text-secondary);
-      padding-left: 18px;
-      position: relative;
-    }
-
-    .hero-list li::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 9px;
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: var(--accent);
-    }
-
-    .hero-panel-note {
-      font-size: 0.8rem;
-      color: var(--text-secondary);
-      padding-top: 16px;
-      border-top: 1px solid var(--border);
-    }
-
-    /* Statement */
-    .statement {
-      background-color: var(--bg-secondary);
-      border-bottom: 1px solid var(--border);
-    }
-
-    .statement-box {
-      max-width: 880px;
-      margin: 0 auto;
-      text-align: center;
-    }
-
-    .statement-lead {
-      font-family: var(--font-serif);
-      font-size: clamp(1.7rem, 3vw, 2.35rem);
-      line-height: 1.32;
-      color: var(--text-primary);
-      margin-bottom: 24px;
-    }
-
-    .statement-text {
-      font-size: 1.02rem;
-      color: var(--text-secondary);
-      line-height: 1.78;
-    }
-
-    /* Enjeux */
-    .section-head {
-      max-width: 720px;
-      margin-bottom: 52px;
-    }
-
-    .enjeux-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-      margin-bottom: 44px;
-    }
-
-    .enjeu-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 30px 28px;
-      box-shadow: var(--shadow-sm);
-      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
-    }
-
-    .enjeu-card:hover {
-      transform: translateY(-4px);
-      box-shadow: var(--shadow-md);
-      border-color: rgba(44, 85, 69, 0.3);
-    }
-
-    .enjeu-num {
-      display: inline-block;
-      font-family: var(--font-serif);
-      font-size: 1.15rem;
-      font-weight: 600;
-      color: var(--accent-warm);
-      margin-bottom: 10px;
-    }
-
-    .enjeu-card p {
-      font-size: 0.93rem;
-      color: var(--text-secondary);
-      line-height: 1.65;
-    }
-
-    /* Démarche */
-    .demarche {
-      background-color: var(--bg-secondary);
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-    }
-
-    .demarche-header {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 48px;
-      align-items: end;
-      margin-bottom: 56px;
-    }
-
-    .demarche-tagline {
-      font-family: var(--font-serif);
-      font-size: 1.5rem;
-      font-style: italic;
-      color: var(--accent);
-      margin-bottom: 12px;
-    }
-
-    .demarche-intro {
-      color: var(--text-secondary);
-      font-size: 1rem;
-      line-height: 1.75;
-    }
-
-    .steps-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 22px;
-    }
-
-    .step-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 28px 24px;
-    }
-
-    .step-badge {
-      width: 34px;
-      height: 34px;
-      border-radius: 50%;
-      background: var(--accent-soft);
-      color: var(--accent);
-      font-weight: 600;
-      font-size: 0.85rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 18px;
-    }
-
-    .step-card p {
-      font-size: 0.91rem;
-      color: var(--text-secondary);
-    }
-
-    /* Méthode */
-    .methode {
-      background-color: var(--bg-dark);
-      color: var(--text-light);
-    }
-
-    .methode h2, .methode h3 {
-      color: var(--text-light);
-    }
-
-    .methode-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 26px;
-      margin-top: 44px;
-    }
-
-    .methode-item {
-      background: var(--bg-dark-soft);
-      border: 1px solid var(--border-light);
-      border-radius: var(--radius);
-      padding: 32px;
-    }
-
-    .methode-item p {
-      color: rgba(247, 245, 240, 0.78);
-      font-size: 0.95rem;
-      line-height: 1.7;
-    }
-
-    /* Offres */
-    .offres-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 28px;
-    }
-
-    .offre-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 36px 32px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      box-shadow: var(--shadow-sm);
-    }
-
-    .offre-code {
-      font-size: 0.75rem;
-      font-weight: 600;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--accent-warm);
-      margin-bottom: 10px;
-      display: block;
-    }
-
-    .offre-desc {
-      font-size: 0.94rem;
-      color: var(--text-secondary);
-      margin-bottom: 20px;
-      line-height: 1.65;
-    }
-
-    .offre-list {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      margin-bottom: 28px;
-    }
-
-    .offre-list li {
-      font-size: 0.91rem;
-      color: var(--text-primary);
-      padding-left: 18px;
-      position: relative;
-      line-height: 1.55;
-    }
-
-    .offre-list li::before {
-      content: "—";
-      position: absolute;
-      left: 0;
-      color: var(--accent);
-      font-weight: 600;
-    }
-
-    .offre-footer {
-      padding-top: 18px;
-      border-top: 1px solid var(--border);
-    }
-
-    /* À propos */
-    .about {
-      background-color: var(--bg-secondary);
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-    }
-
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: 54px;
-      align-items: start;
-    }
-
-    .about-lead {
-      font-family: var(--font-serif);
-      font-size: 1.48rem;
-      color: var(--accent);
-      line-height: 1.4;
-      margin-bottom: 24px;
-    }
-
-    .about-body p {
-      font-size: 0.96rem;
-      color: var(--text-secondary);
-      margin-bottom: 18px;
-      line-height: 1.75;
-    }
-
-    .about-closing {
-      margin-top: 24px;
-      padding: 20px 24px;
-      background: var(--bg-card);
-      border-left: 3px solid var(--accent);
-      border-radius: 0 var(--radius) var(--radius) 0;
-      font-weight: 500;
-      color: var(--text-primary);
-      font-size: 0.96rem;
-    }
-
-    .stats-stack {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 18px;
-    }
-
-    .stat-box {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 24px 26px;
-      box-shadow: var(--shadow-sm);
-    }
-
-    .stat-value {
-      font-family: var(--font-serif);
-      font-size: 2.15rem;
-      font-weight: 600;
-      color: var(--accent);
-      line-height: 1.1;
-      margin-bottom: 6px;
-    }
-
-    .stat-label {
-      font-size: 0.9rem;
-      color: var(--text-secondary);
-      line-height: 1.5;
-    }
-
-    /* Contact */
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 1.25fr 0.75fr;
-      gap: 48px;
-      align-items: start;
-    }
-
-    .contact-form {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 36px;
-      box-shadow: var(--shadow-sm);
-    }
-
-    .form-row {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 18px;
-    }
-
-    .form-group {
-      margin-bottom: 18px;
-    }
-
-    label {
-      display: block;
-      font-size: 0.84rem;
-      font-weight: 500;
-      color: var(--text-primary);
-      margin-bottom: 7px;
-    }
-
-    input, select, textarea {
-      width: 100%;
-      padding: 12px 14px;
-      border-radius: 10px;
-      border: 1px solid var(--border);
-      background: var(--bg-primary);
-      font-family: var(--font-sans);
-      font-size: 0.92rem;
-      color: var(--text-primary);
-      transition: border-color 0.2s ease, background-color 0.2s ease;
-    }
-
-    input:focus, select:focus, textarea:focus {
-      outline: none;
-      border-color: var(--accent);
-      background: #FFFFFF;
-    }
-
-    textarea {
-      min-height: 120px;
-      resize: vertical;
-    }
-
-    .form-feedback {
-      display: none;
-      margin-top: 16px;
-      padding: 14px 18px;
-      border-radius: 10px;
-      background: var(--accent-soft);
-      color: var(--accent);
-      font-size: 0.9rem;
-      font-weight: 500;
-    }
-
-    .contact-aside {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-
-    .aside-card {
-      background: var(--bg-secondary);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 26px;
-    }
-
-    .aside-card h3 {
-      font-size: 1.25rem;
-      margin-bottom: 10px;
-    }
-
-    .aside-card p {
-      font-size: 0.9rem;
-      color: var(--text-secondary);
-      line-height: 1.65;
-    }
-
-    /* Footer */
-    footer {
-      background: var(--bg-dark);
-      color: rgba(247, 245, 240, 0.78);
-      padding: 52px 0;
-      font-size: 0.86rem;
-    }
-
-    .footer-inner {
-      display: flex;
-      flex-direction: column;
-      gap: 18px;
-    }
-
-    .footer-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 16px;
-      padding-bottom: 20px;
-      border-bottom: 1px solid var(--border-light);
-    }
-
-    .footer-brand {
-      font-family: var(--font-serif);
-      font-size: 1.55rem;
-      color: var(--text-light);
-    }
-
-    .footer-legal {
-      font-size: 0.8rem;
-      color: rgba(247, 245, 240, 0.6);
-      line-height: 1.6;
-    }
-
-    /* Responsive */
-    @media (max-width: 980px) {
-      .hero-grid,
-      .demarche-header,
-      .about-grid,
-      .contact-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .enjeux-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .steps-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .offres-grid,
-      .methode-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .nav-links {
-        display: none;
-      }
-    }
-
-    @media (max-width: 640px) {
-      section {
-        padding: 72px 0;
-      }
-
-      .enjeux-grid,
-      .steps-grid,
-      .form-row {
-        grid-template-columns: 1fr;
-      }
-
-      .contact-form,
-      .offre-card {
-        padding: 26px 22px;
-      }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Voies Hautes — Transformation professionnelle, Prévention RPS &amp; Alignement</title>
+<meta name="description" content="Consultante, auditrice, formatrice et coach en transformation professionnelle. J'accompagne la transformation professionnelle des entreprises à l'intersection de l'humain et de la stratégie.">
+<link rel="icon" href="brand-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/glacial-indifference" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Navigation -->
-  <header>
-    <div class="container nav-inner">
-      <a href="#" class="brand">
-        <span class="brand-name">Voies Hautes</span>
-        <span class="brand-tagline">Consultante — Auditrice — Formatrice — Coach en transformation professionnelle</span>
-      </a>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#vision">Vision</a></li>
-          <li><a href="#enjeux">Enjeux</a></li>
-          <li><a href="#offres">Offres</a></li>
-          <li><a href="#demarche">Démarche</a></li>
-          <li><a href="#a-propos">À propos</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <a href="#contact" class="btn btn-primary btn-sm">Planifier un cadrage</a>
-    </div>
-  </header>
+<!-- ============ INTRO SCREEN ============ -->
+<div class="intro-screen" id="introScreen">
+  <img src="hero-logo-white.png" alt="Voies Hautes" class="intro-screen__logo">
+</div>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="container hero-grid">
-      <div>
-        <span class="eyebrow">Entreprises, CSE &amp; cabinets de conseil</span>
-        <h1>Aligner l’humain et la stratégie pour transformer durablement vos pratiques.</h1>
-        <p class="hero-subtitle">
-          J'accompagne la transformation professionnelle des entreprises à l'intersection de l'humain et de la stratégie : prévention des risques psychosociaux, développement des compétences relationnelles, inclusion et alignement des postures.
-        </p>
-        <div class="hero-actions">
-          <a href="#contact" class="btn btn-primary">Planifier un cadrage</a>
-          <a href="#offres" class="btn btn-outline">Découvrir les offres</a>
-        </div>
-      </div>
+<!-- ============ CUSTOM CURSOR ============ -->
+<div class="cursor-dot" id="cursorDot"></div>
 
-      <aside class="hero-panel">
-        <span class="hero-panel-label">Périmètre d’intervention B2B</span>
-        <h3>Audits, formations &amp; conseil opérationnel</h3>
-        <ul class="hero-list">
-          <li>Prévention des RPS, stress &amp; équilibre vie pro / vie perso</li>
-          <li>Diagnostic DUERP &amp; formations obligatoires CSE / SSCT</li>
-          <li>Communication interpersonnelle &amp; désamorçage des tensions</li>
-          <li>Inclusion, diversité &amp; cohésion d’équipe</li>
-          <li>Marque employeur, personal branding &amp; posture professionnelle</li>
-        </ul>
-        <p class="hero-panel-note">
-          Interventions en français et en anglais — en direct ou en partenariat avec des organismes certifiés Qualiopi (et agréés lorsque requis).
-        </p>
-      </aside>
+<!-- ============ DEPTH RAIL (signature element) ============ -->
+<nav class="depth-rail" aria-hidden="true">
+  <div class="depth-rail__track">
+    <div class="depth-rail__fill" id="depthFill"></div>
+  </div>
+  <ul class="depth-rail__labels">
+    <li data-target="hero" class="is-active">vision</li>
+    <li data-target="situations">enjeux</li>
+    <li data-target="approche">démarche</li>
+    <li data-target="accompagnement">offres</li>
+    <li data-target="qui-suis-je">parcours</li>
+    <li data-target="temoignages">références</li>
+  </ul>
+</nav>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="wrap site-header__inner">
+    <a href="#hero" class="brand">
+      <img src="brand-mark.png" alt="Voies Hautes" class="brand__mark">
+      <span class="brand__text">transformation professionnelle — humain &amp; stratégie</span>
+    </a>
+    <a href="https://calendly.com/contact-mtragency/appel-meriem-tiar" class="btn btn--ghost" target="_blank" rel="noopener">planifier un cadrage</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero grain" id="hero">
+    <div class="hero__media">
+      <img src="hero-portrait.jpeg" alt="Meriem Tiar, consultante et formatrice en transformation professionnelle" class="hero__img" data-reveal>
+      <div class="hero__grain"></div>
     </div>
+    <div class="wrap hero__content">
+      <p class="eyebrow" data-reveal>entreprises, cse &amp; cabinets de conseil</p>
+      <img src="hero-logo-white.png" alt="Voies Hautes" class="hero__logo" data-reveal>
+      <p class="hero__headline reveal-words">Aligner l’humain et la stratégie.</p>
+      <p class="hero__subtext" data-reveal>J'accompagne la transformation professionnelle des entreprises à l'intersection de l'humain et de la stratégie : prévention des risques psychosociaux, développement des compétences relationnelles, inclusion et alignement des postures.</p>
+      <a href="https://calendly.com/contact-mtragency/appel-meriem-tiar" class="btn btn--primary" target="_blank" rel="noopener" data-reveal>planifier un cadrage</a>
+    </div>
+    <div class="scroll-cue" aria-hidden="true"><span></span></div>
   </section>
 
-  <!-- Statement / Vision -->
-  <section id="vision" class="statement">
-    <div class="container statement-box">
-      <span class="eyebrow">Vision</span>
-      <p class="statement-lead">
-        Et si vos obligations de prévention, vos dynamiques relationnelles et votre identité collective devenaient de vrais leviers de cohésion et de performance ?
+  <!-- ============ STATEMENT ============ -->
+  <section class="statement">
+    <div class="wrap wrap--narrow">
+      <p class="statement__text reveal-words">
+        Et si vos obligations de prévention, vos dynamiques relationnelles et votre identité collective devenaient de vrais leviers de cohésion&nbsp;?
       </p>
-      <p class="statement-text">
-        Voies Hautes accompagne les entreprises, les instances représentatives et les cabinets de conseil avec une approche de terrain : objectiver les risques humains et organisationnels, déployer des formations concrètes et finançables (OPCO / Plan de Développement des Compétences, en partenariat avec des organismes certifiés Qualiopi et agréés lorsque requis), et renforcer l'alignement des postures et des équipes.
+      <p class="statement__body" data-reveal>
+        Voies Hautes accompagne les entreprises, les instances représentatives et les cabinets de conseil avec une approche de terrain&nbsp;: objectiver les risques humains et organisationnels, déployer des formations concrètes (en direct ou via des organismes partenaires certifiés Qualiopi et agréés lorsque requis), et renforcer durablement l'alignement des postures et des équipes.
       </p>
     </div>
   </section>
 
-  <!-- Enjeux -->
-  <section id="enjeux">
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">Enjeux prioritaires</span>
-        <h2>Votre organisation fait face à l’un de ces enjeux ?</h2>
-      </div>
-
-      <div class="enjeux-grid">
-        <article class="enjeu-card">
-          <span class="enjeu-num">01</span>
-          <h3>Prévention des RPS, stress &amp; équilibre de vie</h3>
+  <!-- ============ ENJEUX / SITUATIONS ============ -->
+  <section class="situations" id="situations">
+    <div class="wrap">
+      <h2 class="section-title" data-reveal>Votre organisation fait face à l'un de ces enjeux&nbsp;?</h2>
+      <div class="situations__grid">
+        <article class="situation-card" data-reveal>
+          <span class="situation-card__index">01</span>
+          <h3>Prévention des RPS &amp; stress au travail</h3>
           <p>Identifier les facteurs de surcharge mentale, prévenir l'épuisement professionnel et outiller les équipes pour construire un équilibre vie professionnelle / vie personnelle durable.</p>
         </article>
-
-        <article class="enjeu-card">
-          <span class="enjeu-num">02</span>
-          <h3>Communication interpersonnelle &amp; désamorçage des tensions</h3>
-          <p>Installer une communication constructive au quotidien, réguler les situations sensibles, désamorcer les frictions et renforcer la qualité relationnelle au sein des équipes ou face à des publics exigeants (FR / EN).</p>
+        <article class="situation-card" data-reveal>
+          <span class="situation-card__index">02</span>
+          <h3>Communication &amp; désamorçage des tensions</h3>
+          <p>Installer une communication interpersonnelle constructive, réguler les situations sensibles, désamorcer les frictions et renforcer la qualité relationnelle (FR / EN).</p>
         </article>
-
-        <article class="enjeu-card">
-          <span class="enjeu-num">03</span>
-          <h3>Diagnostic DUERP &amp; obligations réglementaires (RPS / SSCT)</h3>
-          <p>Évaluer les risques humains et organisationnels sur le terrain pour structurer ou mettre à jour le DUERP et déployer les formations obligatoires (notamment SSCT des élus du CSE, via un organisme partenaire certifié Qualiopi et agréé).</p>
+        <article class="situation-card" data-reveal>
+          <span class="situation-card__index">03</span>
+          <h3>Diagnostic DUERP &amp; obligations CSE / SSCT</h3>
+          <p>Évaluer les risques humains et organisationnels sur le terrain pour structurer le DUERP et déployer les formations obligatoires (via organisme partenaire certifié Qualiopi et agréé).</p>
         </article>
-
-        <article class="enjeu-card">
-          <span class="enjeu-num">04</span>
+        <article class="situation-card" data-reveal>
+          <span class="situation-card__index">04</span>
           <h3>Inclusion, diversité &amp; cohésion d'équipe</h3>
-          <p>Sensibiliser les équipes, prévenir les biais et les incompréhensions culturelles ou générationnelles, et favoriser un environnement de travail respectueux et collaboratif.</p>
+          <p>Sensibiliser les collaborateurs, prévenir les biais et les incompréhensions culturelles ou générationnelles, et favoriser un environnement de travail respectueux et collaboratif.</p>
         </article>
-
-        <article class="enjeu-card">
-          <span class="enjeu-num">05</span>
+        <article class="situation-card" data-reveal>
+          <span class="situation-card__index">05</span>
           <h3>Marque employeur &amp; alignement interne</h3>
-          <p>Réduire l'écart entre la promesse employeur affichée et la réalité vécue sur le terrain, renforcer la cohérence interne et soutenir l'attractivité et l'engagement des équipes.</p>
+          <p>Réduire l'écart entre la promesse employeur affichée et la réalité vécue sur le terrain, renforcer la cohérence interne et soutenir l'engagement des équipes.</p>
         </article>
-
-        <article class="enjeu-card">
-          <span class="enjeu-num">06</span>
-          <h3>Personal branding, posture professionnelle &amp; prise de parole</h3>
-          <p>Accompagner les dirigeants, managers et experts dans l'affirmation de leur posture, la clarté de leur discours et le rayonnement de leur identité professionnelle.</p>
+        <article class="situation-card" data-reveal>
+          <span class="situation-card__index">06</span>
+          <h3>Personal branding &amp; posture professionnelle</h3>
+          <p>Accompagner les dirigeants, managers et experts dans l'affirmation de leur posture, la clarté de leur prise de parole et le rayonnement de leur identité professionnelle.</p>
         </article>
       </div>
-
-      <a href="#contact" class="btn btn-primary">Échanger sur vos besoins</a>
+      <a href="https://calendly.com/contact-mtragency/appel-meriem-tiar" class="btn btn--primary" target="_blank" rel="noopener" data-reveal>échanger sur vos besoins</a>
     </div>
   </section>
 
-  <!-- Démarche -->
-  <section id="demarche" class="demarche">
-    <div class="container">
-      <div class="demarche-header">
-        <div>
-          <span class="eyebrow">Mon accompagnement</span>
-          <p class="demarche-tagline">Relier la rigueur du diagnostic terrain à une pédagogie active pour ancrer des transformations durables.</p>
-          <h2>Clarifier, structurer, transformer</h2>
-        </div>
-        <p class="demarche-intro">
-          Un cadre exigeant, lucide et opérationnel pour objectiver les points de friction, répondre aux exigences légales et outiller durablement les décideurs, les managers et les équipes.
+  <!-- ============ ACCOMPAGNEMENT / PHILOSOPHIE ============ -->
+  <section class="role grain" id="approche">
+    <span class="ghost-num" style="top:20px; right:4%;" aria-hidden="true">01</span>
+    <div class="role__media" data-reveal>
+      <img src="role-portrait.jpeg" alt="Meriem Tiar en intervention" class="role-img">
+    </div>
+    <div class="role__grain"></div>
+    <div class="wrap">
+      <div class="role__intro">
+        <p class="eyebrow" data-reveal>mon accompagnement</p>
+        <p class="role__lead" data-reveal>Relier la rigueur du diagnostic terrain à une pédagogie active pour ancrer des transformations professionnelles durables.</p>
+      </div>
+      <div class="role__body">
+        <h2 class="section-title section-title--light" data-reveal>clarifier, structurer, transformer</h2>
+        <p class="role__text" data-reveal>
+          Un cadre exigeant, lucide et opérationnel pour objectiver les points de friction, sécuriser vos obligations légales et outiller durablement les décideurs, les managers et les équipes.
         </p>
       </div>
-
-      <div class="steps-grid">
-        <div class="step-card">
-          <div class="step-badge">1</div>
+      <ol class="steps">
+        <li class="steps__item" data-reveal>
+          <span class="steps__num steps__num--light">01</span>
           <h3>Diagnostic &amp; cadrage</h3>
-          <p>Analyse du contexte, recueil des besoins sur le terrain (DUERP / RPS, climat relationnel, marque employeur, postures ou compétences) et définition d'un périmètre clair.</p>
-        </div>
-
-        <div class="step-card">
-          <div class="step-badge">2</div>
-          <h3>Structuration &amp; recommandations</h3>
-          <p>Identification des causes racines, priorisation des actions et élaboration de livrables, plans d'action ou trames pédagogiques actionnables.</p>
-        </div>
-
-        <div class="step-card">
-          <div class="step-badge">3</div>
+          <p>Analyse du contexte, recueil des besoins sur le terrain (DUERP / RPS, climat relationnel, marque employeur, postures) et définition d'un périmètre clair.</p>
+        </li>
+        <li class="steps__item" data-reveal>
+          <span class="steps__num steps__num--light">02</span>
+          <h3>Structuration &amp; plan d'action</h3>
+          <p>Identification des causes racines, priorisation des leviers et élaboration de recommandations, livrables ou trames pédagogiques actionnables.</p>
+        </li>
+        <li class="steps__item" data-reveal>
+          <span class="steps__num steps__num--light">03</span>
           <h3>Déploiement &amp; animation</h3>
           <p>Conduite d'ateliers, de formations ou de missions de conseil avec une pédagogie active, des mises en situation et une régulation attentive du groupe.</p>
-        </div>
-
-        <div class="step-card">
-          <div class="step-badge">4</div>
+        </li>
+        <li class="steps__item" data-reveal>
+          <span class="steps__num steps__num--light">04</span>
           <h3>Évaluation &amp; ancrage</h3>
-          <p>Grilles d'évaluation, restitutions claires et repères opérationnels pour inscrire les nouvelles pratiques dans la durée.</p>
-        </div>
-      </div>
+          <p>Grilles d'évaluation, restitutions exécutives et repères opérationnels pour inscrire les nouvelles pratiques dans la durée.</p>
+        </li>
+      </ol>
     </div>
   </section>
 
-  <!-- Méthode -->
+  <!-- ============ MA MÉTHODE ============ -->
   <section class="methode">
-    <div class="container">
-      <span class="eyebrow eyebrow-light">Ma méthode</span>
-      <h2>Quatre repères pour des interventions utiles et durables</h2>
-
-      <div class="methode-grid">
-        <div class="methode-item">
+    <span class="ghost-num section-light" style="top:-20px; left:2%;" aria-hidden="true">02</span>
+    <div class="wrap">
+      <p class="eyebrow" data-reveal>ma méthode</p>
+      <div class="pillars">
+        <div class="pillar" data-reveal>
+          <span class="pillar__badge">01</span>
           <h3>Orientée livrables &amp; terrain</h3>
           <p>Des diagnostics, plans d'action, supports et ateliers construits à partir de l'activité réelle, sans jargon inutile.</p>
         </div>
-
-        <div class="methode-item">
+        <div class="pillar" data-reveal>
+          <span class="pillar__badge">02</span>
           <h3>Double lecture humaine &amp; stratégique</h3>
-          <p>Une approche croisée issue de la gestion d'entreprise, de la stratégie de marque et de l'observation des dynamiques humaines pour agir sur les causes profondes.</p>
+          <p>Une approche croisée issue de la gestion d'entreprise, de la stratégie de marque et de l'observation des dynamiques humaines.</p>
         </div>
-
-        <div class="methode-item">
+        <div class="pillar" data-reveal>
+          <span class="pillar__badge">03</span>
           <h3>Ingénierie pédagogique certifiée TOT</h3>
-          <p>Des parcours conçus selon le programme international <em>TOT – Train the Trainers</em> (Napoleon Hill Training Corporation®), alliant facilitation active, jeux de rôle et évaluation.</p>
+          <p>Des parcours conçus selon le programme international TOT – Train the Trainers (30h), alliant facilitation active, jeux de rôle et évaluation.</p>
         </div>
-
-        <div class="methode-item">
+        <div class="pillar" data-reveal>
+          <span class="pillar__badge">04</span>
           <h3>Déploiement conforme &amp; finançable</h3>
-          <p>Intervention en direct pour le conseil, l'audit et le coaching, et en partenariat avec des organismes certifiés Qualiopi (et agréés CSE/SSCT) pour les actions finançables via les budgets formation / OPCO.</p>
+          <p>Intervention en direct pour le conseil, l'audit et le coaching, et en partenariat avec des organismes certifiés Qualiopi (et agréés CSE/SSCT) pour les financements OPCO.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Offres -->
-  <section id="offres">
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">Dispositifs d'intervention</span>
-        <h2>Des formats adaptés à vos priorités et à votre organisation</h2>
-      </div>
+  <!-- ============ ACCOMPAGNEMENT / OFFRES ============ -->
+  <section class="services" id="accompagnement">
+    <div class="wrap">
+      <h2 class="section-title" data-reveal>Dispositifs d'intervention B2B</h2>
+      <div class="services__grid">
 
-      <div class="offres-grid">
-        <!-- Offre 01 -->
-        <article class="offre-card">
-          <div>
-            <span class="offre-code">Offre 01</span>
-            <h3>Formations &amp; ateliers pratiques (Intra-entreprise &amp; OPCO)</h3>
-            <p class="offre-desc">
-              Des parcours opérationnels et interactifs conçus avec une ingénierie pédagogique certifiée TOT, déployables en direct ou en partenariat avec un organisme certifié Qualiopi pour les prises en charge OPCO / Plan de Développement des Compétences :
-            </p>
-            <ul class="offre-list">
+        <article class="service-card" data-reveal>
+          <div class="service-card__media">
+            <img src="service-formation.png" alt="Formations et ateliers pratiques" loading="lazy">
+          </div>
+          <div class="service-card__overlay"></div>
+          <div class="service-card__body">
+            <h3>formations &amp; ateliers pratiques</h3>
+            <p>Parcours interactifs sur mesure (en direct ou via partenaire certifié Qualiopi pour prise en charge OPCO) sur vos enjeux humains et relationnels.</p>
+            <ul>
               <li>Communication interpersonnelle &amp; désamorçage des tensions (FR / EN)</li>
-              <li>Stress au travail &amp; équilibre vie professionnelle / vie personnelle</li>
+              <li>Stress au travail &amp; équilibre vie pro / vie perso</li>
               <li>Inclusion &amp; diversité au travail</li>
-              <li>Marque employeur &amp; cohérence interne</li>
-              <li>Personal branding, posture professionnelle &amp; prise de parole</li>
-              <li>Formations obligatoires CSE / SSCT <em>(via organisme partenaire certifié Qualiopi et détenteur de l'agrément préfectoral)</em></li>
+              <li>Marque employeur &amp; personal branding / posture pro</li>
+              <li>Formations obligatoires CSE / SSCT (via partenaire certifié Qualiopi &amp; agréé)</li>
             </ul>
-          </div>
-          <div class="offre-footer">
-            <a href="#contact" class="btn btn-outline btn-sm" data-select="Formation / Atelier (OPCO / Qualiopi / CSE)">Demander un programme</a>
+            <a href="https://calendly.com/contact-mtragency/appel-meriem-tiar" class="link-arrow" target="_blank" rel="noopener">Demander un programme →</a>
           </div>
         </article>
 
-        <!-- Offre 02 -->
-        <article class="offre-card">
-          <div>
-            <span class="offre-code">Offre 02</span>
-            <h3>Audit-Diagnostic DUERP, RPS &amp; Climat relationnel</h3>
-            <p class="offre-desc">
-              Un état des lieux structuré et de terrain pour sécuriser vos obligations légales, prévenir les risques humains et prioriser vos actions :
-            </p>
-            <ul class="offre-list">
-              <li>Diagnostic et mise à jour du DUERP (approche risques professionnels, humains et organisationnels)</li>
-              <li>Évaluation des Risques Psychosociaux (RPS) et repérage des tensions / irritants</li>
-              <li>Format hybride : Audit flash DUERP/RPS + Atelier pratique managers ou équipes</li>
-              <li>Livrables exécutifs : synthèse des constats, cartographie des risques et plan d'action</li>
-            </ul>
+        <article class="service-card" data-reveal>
+          <div class="service-card__media">
+            <img src="service-individuel.jpeg" alt="Audit-Diagnostic DUERP et RPS" loading="lazy">
           </div>
-          <div class="offre-footer">
-            <a href="#contact" class="btn btn-outline btn-sm" data-select="Audit DUERP / RPS / Climat relationnel">Demander un diagnostic</a>
+          <div class="service-card__overlay"></div>
+          <div class="service-card__body">
+            <h3>audit-diagnostic duerp &amp; rps</h3>
+            <p>Un état des lieux objectif et de terrain pour sécuriser vos obligations légales, prévenir les risques humains et prioriser vos actions.</p>
+            <ul>
+              <li>Diagnostic et mise à jour du DUERP (risques humains &amp; organisationnels)</li>
+              <li>Évaluation des Risques Psychosociaux (RPS) &amp; climat relationnel</li>
+              <li>Format hybride : Audit flash DUERP/RPS + Atelier managers</li>
+              <li>Livrables exécutifs : synthèse, cartographie et plan d'action</li>
+            </ul>
+            <a href="https://calendly.com/contact-mtragency/appel-meriem-tiar" class="link-arrow" target="_blank" rel="noopener">Demander un diagnostic →</a>
           </div>
         </article>
 
-        <!-- Offre 03 -->
-        <article class="offre-card">
-          <div>
-            <span class="offre-code">Offre 03</span>
-            <h3>Conseil en alignement, marque employeur &amp; ingénierie</h3>
-            <p class="offre-desc">
-              Un accompagnement stratégique et opérationnel auprès des directions, RH, écoles et organismes partenaires :
-            </p>
-            <ul class="offre-list">
-              <li>Audit d'alignement entre stratégie, marque employeur, culture et pratiques terrain</li>
-              <li>Ingénierie pédagogique sur mesure : conception de modules, cas pratiques et grilles d'évaluation</li>
-              <li>Études qualitatives et quantitatives sur le climat interne, l'engagement ou la relation client</li>
-            </ul>
+        <article class="service-card" data-reveal>
+          <div class="service-card__media">
+            <img src="service-collectif.PNG" alt="Conseil en alignement et marque employeur" loading="lazy">
           </div>
-          <div class="offre-footer">
-            <a href="#contact" class="btn btn-outline btn-sm" data-select="Conseil marque employeur / Alignement / Ingénierie">Cadrer une mission</a>
+          <div class="service-card__overlay"></div>
+          <div class="service-card__body">
+            <h3>conseil, marque employeur &amp; ingénierie</h3>
+            <p>Un accompagnement stratégique et opérationnel auprès des directions, RH, écoles et organismes partenaires.</p>
+            <ul>
+              <li>Audit d'alignement entre stratégie, marque employeur et pratiques terrain</li>
+              <li>Ingénierie pédagogique : modules, cas pratiques et grilles d'évaluation</li>
+              <li>Études qualitatives et quantitatives (climat interne, engagement, relation client)</li>
+            </ul>
+            <a href="https://calendly.com/contact-mtragency/appel-meriem-tiar" class="link-arrow" target="_blank" rel="noopener">Cadrer une mission →</a>
           </div>
         </article>
 
-        <!-- Offre 04 -->
-        <article class="offre-card">
-          <div>
-            <span class="offre-code">Offre 04</span>
-            <h3>Coaching professionnel &amp; sous-traitance cabinets</h3>
-            <p class="offre-desc">
-              Un appui ciblé pour les transitions professionnelles ou le renfort opérationnel d'équipes de conseil :
-            </p>
-            <ul class="offre-list">
-              <li>Coaching professionnel &amp; posture : prise de responsabilité, communication, équilibre pro/perso et personal branding</li>
-              <li>Sous-traitance B2B (FR / EN) pour cabinets de conseil, organismes de formation et écoles (audits, ateliers, animation, évaluation)</li>
-            </ul>
+        <article class="service-card" data-reveal>
+          <div class="service-card__media">
+            <img src="service-interventions.jpeg" alt="Coaching professionnel et sous-traitance" loading="lazy">
           </div>
-          <div class="offre-footer">
-            <a href="#contact" class="btn btn-outline btn-sm" data-select="Coaching professionnel / Sous-traitance cabinet">Échanger sur un renfort</a>
+          <div class="service-card__overlay"></div>
+          <div class="service-card__body">
+            <h3>coaching pro &amp; sous-traitance cabinets</h3>
+            <p>Un appui ciblé pour accompagner les postures individuelles ou renforcer vos équipes de conseil et de formation.</p>
+            <ul>
+              <li>Coaching professionnel : prise de poste, leadership, communication &amp; équilibre</li>
+              <li>Personal branding &amp; prise de parole pour dirigeants et experts</li>
+              <li>Sous-traitance B2B (FR / EN) pour cabinets de conseil, OF et écoles</li>
+            </ul>
+            <a href="https://calendly.com/contact-mtragency/appel-meriem-tiar" class="link-arrow" target="_blank" rel="noopener">Échanger sur un renfort →</a>
           </div>
         </article>
+
       </div>
     </div>
   </section>
 
-  <!-- À propos -->
-  <section id="a-propos" class="about">
-    <div class="container about-grid">
-      <div class="about-body">
-        <span class="eyebrow">Qui suis-je</span>
-        <h2>Je suis Meriem.</h2>
-        <p class="about-lead">
-          Consultante, auditrice terrain, formatrice certifiée TOT et coach en transformation professionnelle à la croisée du management, de la prévention humaine et de la stratégie.
-        </p>
-
-        <p>
-          Mon parcours réunit trois expertises complémentaires au service des organisations : la gestion d'entreprise, la stratégie d'alignement et l'ingénierie pédagogique. Diplômée d'une Licence en Administration et Gestion d'Entreprise (Montpellier Management), d'un Master 1 en Marketing et Business Development (Montpellier Management — RNCP35916) et d'un Master 2 en Stratégie de Marque et Planning Stratégique (Sup de Pub — Titre RNCP37775 niveau 7), j'observe de longue date le lien concret entre organisation du travail, stratégie, posture et dynamique humaine.
-        </p>
-
-        <p>
-          Depuis six ans, j'ai accompagné plus de 80 projets de conseil (notamment en agence digitale avec des budgets mensuels jusqu'à 250 000 €) auprès de dirigeants, d'entrepreneurs et de structures partenaires. J'y ai forgé une rigueur analytique et rédactionnelle : diagnostics, études qualitatives et quantitatives, recommandations et livrables directement exploitables.
-        </p>
-
-        <p>
-          Mon ancrage terrain s'est également construit dans l'événementiel (plus de 50 événements et conférences conçus et coordonnés jusqu'à 800 participants) et dans la relation client internationale haut de gamme (certifiée en excellence de service en 2022 auprès de plus de 4 500 clients par an en français et en anglais), une exigence quotidienne d'écoute active, de négociation et de désamorçage des tensions.
-        </p>
-
-        <p>
-          Certifiée en 2025 sur le programme international TOT – Train the Trainers (Napoleon Hill Training Corporation® — 30 heures intensives), je conçois et anime des formations, ateliers, mises en situation et grilles d'évaluation déployés dans trois écoles et organismes (Élysée Marbeuf, SkyCo, IC For Models) auprès de plus de 200 apprenants — dont des salariés de grands groupes — tout en participant aux jurys d'examen.
-        </p>
-
-        <div class="about-closing">
-          Avec Voies Hautes, chaque intervention vise un résultat concret : protéger les personnes, sécuriser l'organisation et aligner durablement les postures et les équipes.
-        </div>
+  <!-- ============ QUI SUIS-JE ============ -->
+  <section class="about" id="qui-suis-je">
+    <div class="about-hero grain" data-reveal>
+      <img src="bio-hero.jpeg" alt="Portrait de Meriem Tiar" class="about-hero__img">
+      <div class="about-hero__overlay"></div>
+      <div class="wrap">
+        <p class="about-hero__eyebrow">qui suis-je</p>
+        <h2 class="about-hero__name">Je suis Meriem.</h2>
+        <p class="about-hero__tagline">Consultante, auditrice terrain, formatrice certifiée TOT et coach en transformation professionnelle à la croisée du management, de la prévention humaine et de la stratégie.</p>
       </div>
-
-      <aside class="stats-stack">
-        <div class="stat-box">
-          <div class="stat-value">80+</div>
-          <div class="stat-label">Projets de conseil accompagnés (budgets jusqu'à 250 000 € mensuels en agence)</div>
-        </div>
-
-        <div class="stat-box">
-          <div class="stat-value">200+</div>
-          <div class="stat-label">Apprenants formés dans 3 écoles et organismes &amp; jurys d'examen</div>
-        </div>
-
-        <div class="stat-box">
-          <div class="stat-value">4 500+</div>
-          <div class="stat-label">Clients internationaux accompagnés par an en FR / EN (excellence de service 2022)</div>
-        </div>
-
-        <div class="stat-box">
-          <div class="stat-value">Bac+5 &amp; TOT (30h)</div>
-          <div class="stat-label">Titre RNCP niveau 7 (Sup de Pub) et certification Train the Trainers (2025)</div>
-        </div>
-      </aside>
     </div>
-  </section>
 
-  <!-- Contact -->
-  <section id="contact">
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">Contact</span>
-        <h2>Planifier un échange de cadrage</h2>
-        <p style="color: var(--text-secondary);">
-          Précisez votre contexte (entreprise, CSE, organisme de formation ou cabinet de conseil), la thématique souhaitée et vos échéances.
-        </p>
-      </div>
+    <div class="wrap about__grid">
+      <div class="about__content">
+        <div class="about__text" data-reveal>
+          <p>Mon parcours réunit trois expertises complémentaires au service des organisations&nbsp;: la gestion d'entreprise, la stratégie d'alignement et l'ingénierie pédagogique. Diplômée d'une Licence en Administration et Gestion d'Entreprise (Montpellier Management), d'un Master 1 en Marketing et Business Development (Montpellier Management — RNCP35916) et d'un Master 2 en Stratégie de Marque et Planning Stratégique (Sup de Pub — Titre RNCP37775 niveau 7), j'observe de longue date le lien concret entre organisation du travail, stratégie, posture et dynamique humaine.</p>
+          <p>Depuis six ans, j'ai accompagné plus de 80 projets de conseil (notamment en agence digitale avec des budgets mensuels jusqu'à 250 000 €) auprès de dirigeants, d'entrepreneurs et de structures partenaires. J'y ai forgé une rigueur analytique et rédactionnelle&nbsp;: diagnostics, études qualitatives et quantitatives, recommandations et livrables directement exploitables.</p>
+          <p>Mon ancrage terrain s'est également construit dans l'événementiel (plus de 50 événements et conférences conçus et coordonnés jusqu'à 800 participants) et dans la relation client internationale haut de gamme (certifiée en excellence de service en 2022 auprès de plus de 4 500 clients par an en français et en anglais), une exigence quotidienne d'écoute active, de négociation et de désamorçage des tensions.</p>
+          <p>Certifiée en 2025 sur le programme international TOT – Train the Trainers (Napoleon Hill Training Corporation® — 30 heures intensives), je conçois et anime des formations, ateliers, mises en situation et grilles d'évaluation déployés dans trois écoles et organismes (Élysée Marbeuf, SkyCo, IC For Models) auprès de plus de 200 apprenants — dont des salariés de grands groupes — tout en participant aux jurys d'examen.</p>
+        </div>
 
-      <div class="contact-grid">
-        <form class="contact-form" id="cadrageForm">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="nom">Nom &amp; prénom *</label>
-              <input type="text" id="nom" name="nom" required placeholder="Ex. Camille Martin" />
-            </div>
-            <div class="form-group">
-              <label for="organisation">Organisation / Entreprise / Cabinet *</label>
-              <input type="text" id="organisation" name="organisation" required placeholder="Nom de votre structure" />
-            </div>
+        <div class="stats" data-reveal>
+          <div>
+            <span class="stat__num" data-count="80" data-suffix="+">0</span>
+            <span class="stat__label">projets de conseil accompagnés (budgets jusqu'à 250 000 €/mois)</span>
           </div>
-
-          <div class="form-row">
-            <div class="form-group">
-              <label for="email">Email professionnel *</label>
-              <input type="email" id="email" name="email" required placeholder="prenom.nom@entreprise.fr" />
-            </div>
-            <div class="form-group">
-              <label for="objet">Objet principal *</label>
-              <select id="objet" name="objet" required>
-                <option value="Formation / Atelier (OPCO / Qualiopi / CSE)">Formation / Atelier (OPCO / Qualiopi / CSE)</option>
-                <option value="Audit DUERP / RPS / Climat relationnel">Audit DUERP / RPS / Climat relationnel</option>
-                <option value="Conseil marque employeur / Alignement / Ingénierie">Conseil marque employeur / Alignement / Ingénierie</option>
-                <option value="Coaching professionnel / Sous-traitance cabinet">Coaching professionnel / Sous-traitance cabinet</option>
-              </select>
-            </div>
+          <div>
+            <span class="stat__num" data-count="200" data-suffix="+">0</span>
+            <span class="stat__label">apprenants formés en écoles et organismes &amp; jurys d'examen</span>
           </div>
-
-          <div class="form-group">
-            <label for="message">Contexte &amp; besoins *</label>
-            <textarea id="message" name="message" required placeholder="Détails de votre besoin, effectifs concernés, langue (FR/EN), calendrier souhaité..."></textarea>
+          <div>
+            <span class="stat__headline">Excellence relationnelle FR / EN</span>
+            <span class="stat__label">Certifiée en excellence de service (2022) auprès de plus de 4 500 clients internationaux par an</span>
           </div>
-
-          <button type="submit" class="btn btn-primary">Envoyer la demande de cadrage</button>
-          <div class="form-feedback" id="formFeedback">
-            Merci. Votre demande de cadrage a bien été préparée. Meriem vous répondra sous 24 à 48 heures ouvrées.
+          <div>
+            <span class="stat__headline">Bac+5 &amp; Certification TOT (30h)</span>
+            <span class="stat__label">Titre RNCP niveau 7 (Sup de Pub) et certification Train the Trainers (2025)</span>
           </div>
-        </form>
+        </div>
 
-        <aside class="contact-aside">
-          <div class="aside-card">
-            <h3>Périmètre d'intervention</h3>
-            <p>
-              Présentiel &amp; distanciel • Français &amp; Anglais • Direct, partenariat Qualiopi / agréé &amp; sous-traitance B2B.
-            </p>
-          </div>
+        <p class="about__highlight reveal-words">Avec Voies Hautes, chaque intervention vise un résultat concret&nbsp;: protéger les personnes, sécuriser l'organisation et aligner durablement les postures et les équipes.</p>
 
-          <div class="aside-card">
-            <h3>Statut &amp; transparence</h3>
-            <p>
-              Structure en cours d'immatriculation — interventions et partenariats encadrés contractuellement.
-            </p>
-          </div>
-        </aside>
+        <div class="social-links" data-reveal>
+          <a href="https://fr.linkedin.com/in/meriemtiarconsulting" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+          <a href="https://www.instagram.com/tiar_meriem/" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container footer-inner">
-      <div class="footer-top">
-        <span class="footer-brand">Voies Hautes</span>
-        <span>Consultante, auditrice, formatrice et coach en transformation professionnelle.</span>
-      </div>
-      <p class="footer-legal">
-        Voies Hautes — Projet en cours d'immatriculation. Mentions légales complètes (forme juridique, SIREN/SIRET, hébergeur) publiées dès finalisation de l'immatriculation.
-      </p>
+  <!-- ============ TÉMOIGNAGES / RÉFÉRENCES ============ -->
+  <section class="testimonials" id="temoignages">
+    <div class="wrap">
+      <h2 class="section-title" data-reveal>ils m'ont fait confiance</h2>
     </div>
-  </footer>
+    <div class="testimonials__viewport" data-reveal>
+      <div class="testimonials__track" id="testimonialsTrack">
 
-  <script>
-    // Pré-sélection de l'objet depuis les boutons des offres
-    document.querySelectorAll('[data-select]').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const value = btn.getAttribute('data-select');
-        const select = document.getElementById('objet');
-        if (select && value) {
-          select.value = value;
-        }
-      });
-    });
+        <article class="testimonial-card">
+          <span class="testimonial-card__quote">"</span>
+          <p class="testimonial-card__tag">Consulting — Formation</p>
+          <p class="testimonial-card__text">J'ai eu le plaisir de collaborer à plusieurs reprises avec Meriem et le résultat est sans appel. Professionnelle, fiable, à l'écoute, elle a cette capacité à allier le sérieux dans le travail et la bonne humeur. Meriem m'a formée de manière à ce que je sois autonome, m'a appris à créer des supports de communication, et à gérer mes projets de manière efficace.</p>
+          <p class="testimonial-card__name">Steve Mwela</p>
+          <p class="testimonial-card__role">Entrepreneur</p>
+        </article>
 
-    // Confirmation visuelle du formulaire de cadrage
-    const form = document.getElementById('cadrageForm');
-    const feedback = document.getElementById('formFeedback');
-    if (form && feedback) {
-      form.addEventListener('submit', (e) => {
-        e.preventDefault();
-        feedback.style.display = 'block';
-        form.reset();
-      });
+        <article class="testimonial-card">
+          <span class="testimonial-card__quote">"</span>
+          <p class="testimonial-card__tag">Consulting — Formation</p>
+          <p class="testimonial-card__text">Meriem est une intervenante très professionnelle, réactive et qui propose des supports de formation très complets. Merci pour cette année passée à nos côtés 🙏</p>
+          <p class="testimonial-card__name">Yann Legoff</p>
+          <p class="testimonial-card__role">Fondateur / SkyCo — organisme de formation</p>
+        </article>
+
+        <article class="testimonial-card">
+          <span class="testimonial-card__quote">"</span>
+          <p class="testimonial-card__text">J'ai eu le plaisir de travailler avec Meriem sur plusieurs rendez-vous pour développer notre croissance digitale. Meriem m'a aidé à poser les bases du marketing digital et m'a formé à la gestion de projet. Grâce à son expertise, notre entreprise a pu structurer efficacement ses actions en ligne.</p>
+          <p class="testimonial-card__name">Joachim Larbaoui</p>
+          <p class="testimonial-card__role">Entrepreneur et fondateur, Elysium Capital</p>
+        </article>
+
+        <article class="testimonial-card">
+          <span class="testimonial-card__quote">"</span>
+          <p class="testimonial-card__text">Merci pour ta patience, ton écoute, ton soutien, ta bienveillance et ton sourire contagieux. J'ai adoré travailler avec toi et ai énormément appris ! Tu as développé une énorme envie et confiance en moi à travers ce projet.</p>
+          <p class="testimonial-card__name">Étudiante en Bachelor</p>
+          <p class="testimonial-card__role">Elysée Marbeuf</p>
+        </article>
+
+        <article class="testimonial-card">
+          <span class="testimonial-card__quote">"</span>
+          <p class="testimonial-card__text">Meriem m'a formée à tous les outils nécessaires pour que je puisse me débrouiller seule au lancement de mon activité. Même si certains termes m'étaient totalement étrangers, elle a pris le temps de tout décortiquer pour que je puisse bien tout comprendre.</p>
+          <p class="testimonial-card__name">Myriam Idlamhah</p>
+          <p class="testimonial-card__role">Entrepreneure — HSS Consulting &amp; Twin Touch Event</p>
+        </article>
+
+        <article class="testimonial-card">
+          <span class="testimonial-card__quote">"</span>
+          <p class="testimonial-card__text">Une très belle rencontre et un super accompagnement réalisé par Meriem, nous qui étions novices dans le domaine du marketing. Aujourd'hui nous fêtons le 1 an de notre boutique en ligne, et nous le devons en grande partie à ses conseils.</p>
+          <p class="testimonial-card__name">Nicolas Poinsot</p>
+          <p class="testimonial-card__role">Entrepreneur en e-commerce</p>
+        </article>
+
+      </div>
+      <div class="testimonials__controls">
+        <button type="button" class="testimonials__btn" id="prevTestimonial" aria-label="Témoignage précédent">←</button>
+        <div class="testimonials__dots" id="testimonialDots"></div>
+        <button type="button" class="testimonials__btn" id="nextTestimonial" aria-label="Témoignage suivant">→</button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER CTA ============ -->
+<footer class="footer grain">
+  <div class="wrap footer__inner">
+    <div class="footer__words" data-reveal>
+      <span>prévention</span>
+      <span class="italic">alignement</span>
+      <span>transformation</span>
+    </div>
+    <h2 class="footer__title" data-reveal>aligner l’humain et la stratégie</h2>
+    <p class="footer__signature" data-reveal>Protéger les équipes, structurer les pratiques et incarner une transformation professionnelle durable — en français et en anglais.</p>
+    <a href="https://calendly.com/contact-mtragency/appel-meriem-tiar" class="btn btn--primary btn--lg" target="_blank" rel="noopener" data-reveal>planifier un cadrage</a>
+    <div class="footer__meta">
+      <span>© <span id="year"></span> Voies Hautes — Meriem Tiar (Structure en cours d'immatriculation • Mentions légales complètes publiées dès immatriculation)</span>
+      <div class="social-links">
+        <a href="https://fr.linkedin.com/in/meriemtiarconsulting" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.instagram.com/tiar_meriem/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
     }
   </script>
 </body>
