@@ -474,13 +474,16 @@ h1,h2,h3,h4,p,blockquote{margin:0;}
 }
 .service-card__body p{color:rgba(255,252,243,0.82);margin-bottom:18px;}
 .service-card__body ul{margin-bottom:22px;}
-.service-card__body li{
+.service-card__body li {
   font-size:14px;
   padding:9px 0;
-  border-top:1px solid rgba(255,252,243,0.22);
+  border: none;
   color:rgba(255,252,243,0.82);
 }
-.service-card__body li:last-child{border-bottom:1px solid rgba(255,252,243,0.22);}
+
+.service-card__body li + li {
+  border-top:1px solid rgba(255,252,243,0.22);
+}
 .service-card__body .link-arrow{color:var(--paper);border-color:transparent;}
 .service-card__body .link-arrow:hover{border-color:var(--paper);}
 
