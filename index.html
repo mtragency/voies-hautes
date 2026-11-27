@@ -21,8 +21,8 @@
 
   /* Titres spécifiques du design */
   .hero__headline {
-    font-size: clamp(1.6rem, 3vw, 2.6rem);
-    line-height: 1.2;
+    font-size: clamp(1.3rem, 2vw, 1.8rem);
+    line-height: 1.25;
     text-transform: uppercase;
   }
   .section-title,
@@ -70,11 +70,11 @@
 
   @media (max-width: 600px) {
     h1 { font-size: 2rem; }
-    h2 { font-size: 1.55rem; }
+    h2 { font-size: 1.4rem; }
     h3 { font-size: 1.1rem; }
-    .hero__headline { font-size: 1.6rem; }
+    .hero__headline { font-size: 1.3rem; }
     .section-title,
-    .section-title--light { font-size: 1.55rem; }
+    .section-title--light { font-size: 1.4rem; }
     .role__lead,
     .statement__text,
     .about__highlight { font-size: 1.15rem; }
@@ -84,8 +84,11 @@
   }
 
   .section-title--compact {
-    font-size: clamp(1.45rem, 2.4vw, 2.1rem);
-    line-height: 1.2;
+    font-size: clamp(1.25rem, 1.8vw, 1.65rem);
+    line-height: 1.25;
+  }
+  @media (max-width: 600px) {
+    .section-title--compact { font-size: 1.25rem; }
   }
 
 </style>
@@ -136,9 +139,8 @@
       <div class="hero__grain"></div>
     </div>
     <div class="wrap hero__content">
-      <p class="eyebrow" data-reveal>entreprises, cse et cabinets de conseil</p>
       <img src="hero-logo-white.png" alt="Voies Hautes" class="hero__logo" data-reveal>
-      <p class="hero__headline reveal-words">Aligner l’humain et la stratégie.</p>
+      <p class="hero__headline reveal-words">Aligner humain et stratégie.</p>
       <p class="hero__subtext" data-reveal>Accompagner la transformation professionnelle des entreprises à l'intersection de l'humain et de la stratégie : prévention des risques psychosociaux, développement des compétences relationnelles, inclusion et alignement des postures.</p>
       <a href="https://calendly.com/contact-mtragency/appel-meriem-tiar" class="btn btn--primary" target="_blank" rel="noopener" data-reveal>planifier un accompagnement</a>
     </div>
@@ -285,7 +287,7 @@
             <h3>formations et ateliers pratiques</h3>
             <p>Parcours interactifs sur mesure (en direct ou via partenaire certifié Qualiopi pour prise en charge OPCO) sur vos enjeux humains et relationnels.</p>
             <ul>
-              <li>Communication interpersonnelle et désamorçage des tensions (FR / EN)</li>
+              <li>Communication interpersonnelle et désamorçage des tensions</li>
               <li>Stress au travail et équilibre vie pro / vie perso</li>
               <li>Inclusion et diversité au travail</li>
               <li>Marque employeur et personal branding / posture pro</li>
@@ -474,7 +476,7 @@
       <span>transformation</span>
     </div>
     <h2 class="footer__title" data-reveal>aligner l’humain et la stratégie</h2>
-    <p class="footer__signature" data-reveal>Protéger les équipes, structurer les pratiques et incarner une transformation professionnelle durable, en français et en anglais.</p>
+    <p class="footer__signature" data-reveal>Protéger les équipes, structurer les pratiques et incarner une transformation professionnelle durable.</p>
     <a href="https://calendly.com/contact-mtragency/appel-meriem-tiar" class="btn btn--primary btn--lg" target="_blank" rel="noopener" data-reveal>planifier un accompagnement</a>
     <div class="footer__meta">
       <span>© <span id="year"></span> Voies Hautes, Meriem Tiar (Structure en cours d'immatriculation • Mentions légales complètes publiées dès immatriculation)</span>
