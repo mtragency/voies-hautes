@@ -91,6 +91,27 @@
     .section-title--compact { font-size: 1.25rem; }
   }
 
+
+  /* Séparateurs des thèmes dans les cartes de services : un seul trait entre deux lignes */
+  .services .service-card__body ul {
+    list-style: none !important;
+    margin: 18px 0 22px !important;
+    padding: 0 !important;
+    border: 0 !important;
+  }
+  .services .service-card__body ul li {
+    display: block !important;
+    margin: 0 !important;
+    padding: 10px 0 !important;
+    border: 0 !important;
+    border-bottom: 1px solid rgba(255,252,243,0.22) !important;
+  }
+  .services .service-card__body ul li + li {
+    border-top: 0 !important;
+  }
+  .services .service-card__body ul li:last-child {
+    border-bottom: 1px solid rgba(255,252,243,0.22) !important;
+  }
 </style>
 
 </head>
@@ -124,7 +145,7 @@
   <div class="wrap site-header__inner">
     <a href="#hero" class="brand">
       <img src="brand-mark.png" alt="Voies Hautes" class="brand__mark">
-      <span class="brand__text">audit, conseil et formation en transformation professionnelle</span>
+      <span class="brand__text">transformation professionnelle, humain et stratégie</span>
     </a>
     <a href="https://calendly.com/contact-mtragency/appel-meriem-tiar" class="btn btn--ghost" target="_blank" rel="noopener">planifier un accompagnement</a>
   </div>
@@ -139,8 +160,9 @@
       <div class="hero__grain"></div>
     </div>
     <div class="wrap hero__content">
+      <p class="eyebrow" data-reveal>entreprises, cse et cabinets de conseil</p>
       <img src="hero-logo-white.png" alt="Voies Hautes" class="hero__logo" data-reveal>
-      <p class="hero__headline reveal-words">Aligner humain et stratégie.</p>
+      <p class="hero__headline reveal-words">Aligner l’humain et la stratégie.</p>
       <p class="hero__subtext" data-reveal>Accompagner la transformation professionnelle des entreprises à l'intersection de l'humain et de la stratégie : prévention des risques psychosociaux, développement des compétences relationnelles, inclusion et alignement des postures.</p>
       <a href="https://calendly.com/contact-mtragency/appel-meriem-tiar" class="btn btn--primary" target="_blank" rel="noopener" data-reveal>planifier un accompagnement</a>
     </div>
@@ -172,7 +194,7 @@
         <article class="situation-card" data-reveal>
           <span class="situation-card__index">02</span>
           <h3>Communication et désamorçage des tensions</h3>
-          <p>Installer une communication interpersonnelle constructive, réguler les situations sensibles, désamorcer les frictions et renforcer la qualité relationnelle.</p>
+          <p>Installer une communication interpersonnelle constructive, réguler les situations sensibles, désamorcer les frictions et renforcer la qualité relationnelle (FR / EN).</p>
         </article>
         <article class="situation-card" data-reveal>
           <span class="situation-card__index">03</span>
@@ -251,7 +273,7 @@
         <div class="pillar" data-reveal>
           <span class="pillar__badge">01</span>
           <h3>Orientée livrables et terrain</h3>
-          <p>Des diagnostics précis, des plans d'action concrets et des ateliers collaboratifs bâtis à partir de votre réalité opérationnelle, loin des concepts théoriques.</p>
+          <p>Des diagnostics, plans d'action, supports et ateliers construits à partir de l'activité réelle, sans jargon inutile.</p>
         </div>
         <div class="pillar" data-reveal>
           <span class="pillar__badge">02</span>
@@ -260,8 +282,8 @@
         </div>
         <div class="pillar" data-reveal>
           <span class="pillar__badge">03</span>
-          <h3>Une pédagogie claire au service de l'adhésion terrain</h3>
-          <p>Une vulgarisation claire et accessible à tous les niveaux pour faciliter l'adhésion et la montée en compétences.</p>
+          <h3>Ingénierie pédagogique certifiée TOT</h3>
+          <p>Des parcours conçus selon le programme international TOT, Train the Trainers, alliant facilitation active, jeux de rôle et évaluation.</p>
         </div>
         <div class="pillar" data-reveal>
           <span class="pillar__badge">04</span>
@@ -287,7 +309,7 @@
             <h3>formations et ateliers pratiques</h3>
             <p>Parcours interactifs sur mesure (en direct ou via partenaire certifié Qualiopi pour prise en charge OPCO) sur vos enjeux humains et relationnels.</p>
             <ul>
-              <li>Communication interpersonnelle et désamorçage des tensions</li>
+              <li>Communication interpersonnelle et désamorçage des tensions (FR / EN)</li>
               <li>Stress au travail et équilibre vie pro / vie perso</li>
               <li>Inclusion et diversité au travail</li>
               <li>Marque employeur et personal branding / posture pro</li>
@@ -323,10 +345,10 @@
             <h3>interventions (conférence, podcast)</h3>
             <p>Pour les podcasts, conférences et événements qui souhaitent explorer les chemins de la transformation professionnelle.</p>
             <ul>
-             <li>Prévenir l'usure professionnelle et le burn-out<li>
+             <li>Prévenir l'usure professionnelle et le burn-out</li>
              <li>Personal branding authentique, légitmité et image professionnelle</li>
-             <li>Installer une culture du dialogue et de la régulation<li>
-             <li>Neurodiversité, approches comportementales et inclusion<li> 
+             <li>Installer une culture du dialogue et de la régulation</li>
+             <li>Neurodiversité, approches comportementales et inclusion</li> 
             </ul>
             <a href="https://calendly.com/contact-mtragency/appel-meriem-tiar" class="link-arrow" target="_blank" rel="noopener">Cadrer une mission →</a>
           </div>
@@ -385,10 +407,12 @@
             <span class="stat__label">apprenants formés en écoles et organismes et jurys d'examen</span>
           </div>
           <div>
-            <span class="stat__headline">Master en stratégie, gestion et développement de Business</span>
+            <span class="stat__headline">Master en stratégie</span>
+            <span class="stat__label">Master 2 Stratégie de Marque (Sup de Pub) et certification TOT (30h) — Train the Trainers (2025)</span>
           </div>
           <div>
-            <span class="stat__headline">Certification en ingénierie pédagogique</span>
+            <span class="stat__headline">Certification en pédagogie active</span>
+            <span class="stat__label">Conception et animation de formations, ateliers et mises en situation</span>
           </div>
         </div>
 
@@ -473,8 +497,8 @@
       <span class="italic">alignement</span>
       <span>transformation</span>
     </div>
-    <h2 class="footer__title" data-reveal>aligner humain et stratégie</h2>
-    <p class="footer__signature" data-reveal>Protéger les équipes, structurer les pratiques et incarner une transformation professionnelle durable.</p>
+    <h2 class="footer__title" data-reveal>aligner l’humain et la stratégie</h2>
+    <p class="footer__signature" data-reveal>Protéger les équipes, structurer les pratiques et incarner une transformation professionnelle durable, en français et en anglais.</p>
     <a href="https://calendly.com/contact-mtragency/appel-meriem-tiar" class="btn btn--primary btn--lg" target="_blank" rel="noopener" data-reveal>planifier un accompagnement</a>
     <div class="footer__meta">
       <span>© <span id="year"></span> Voies Hautes, Meriem Tiar (Structure en cours d'immatriculation • Mentions légales complètes publiées dès immatriculation)</span>
