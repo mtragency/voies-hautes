@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Voies Basses — Coaching en transformation personnelle et professionnelle</title>
+<meta name="description" content="Coach, consultante, formatrice certifiée en stratégie de marque et développement de projet et de talents. Je vous aide à révéler, structurer et incarner votre potentiel.">
+<link rel="icon" href="brand-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/glacial-indifference" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ INTRO SCREEN ============ -->
+<div class="intro-screen" id="introScreen">
+  <img src="hero-logo-white.png" alt="Voies Basses" class="intro-screen__logo">
+</div>
+
+<!-- ============ CUSTOM CURSOR ============ -->
+<div class="cursor-dot" id="cursorDot"></div>
+
+<!-- ============ DEPTH RAIL (signature element) ============ -->
+<nav class="depth-rail" aria-hidden="true">
+  <div class="depth-rail__track">
+    <div class="depth-rail__fill" id="depthFill"></div>
+  </div>
+  <ul class="depth-rail__labels">
+    <li data-target="hero" class="is-active">surface</li>
+    <li data-target="situations">schémas</li>
+    <li data-target="accompagnement">accompagnement</li>
+    <li data-target="approche">profondeur</li>
+    <li data-target="qui-suis-je">identité</li>
+    <li data-target="temoignages">alignement</li>
+  </ul>
+</nav>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="wrap site-header__inner">
+    <a href="#hero" class="brand">
+      <img src="brand-mark.png" alt="Voies Basses" class="brand__mark">
+      <span class="brand__text">coaching en développement personnel</span>
+    </a>
+    <a href="https://calendly.com/contact-mtragency/appel-meriem-tiar" class="btn btn--ghost" target="_blank" rel="noopener">contact</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero grain" id="hero">
+    <div class="hero__media">
+      <img src="hero-portrait.jpeg" alt="Meriem Tiar, coach en transformation personnelle" class="hero__img" data-reveal>
+      <div class="hero__grain"></div>
+    </div>
+    <div class="wrap hero__content">
+      <p class="eyebrow" data-reveal>particuliers &amp; entreprises</p>
+      <img src="hero-logo-white.png" alt="Voies Basses" class="hero__logo" data-reveal>
+      <p class="hero__headline reveal-words">Faire de son épanouissement sa priorité.</p>
+      <p class="hero__subtext" data-reveal>Avec un accompagnement stratégique et sur-mesure qui soutient une transformation personnelle à la hauteur de son plein potentiel.</p>
+      <a href="https://calendly.com/contact-mtragency/appel-meriem-tiar" class="btn btn--primary" target="_blank" rel="noopener" data-reveal>commencez maintenant</a>
+    </div>
+    <div class="scroll-cue" aria-hidden="true"><span></span></div>
+  </section>
+
+  <!-- ============ STATEMENT ============ -->
+  <section class="statement">
+    <div class="wrap wrap--narrow">
+      <p class="statement__text reveal-words">
+        Et si ce que tu essaies de changer n’était pas la véritable source de tes difficultés ?
+      </p>
+      <p class="statement__body" data-reveal>
+        Ici, on ne travaille pas en surface. Je combine une méthode rigoureuse et un vrai travail de fond pour t'aider à comprendre ce qui te bloque réellement&nbsp;: pas un pansement de plus, une vie qui te ressemble enfin.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ SITUATIONS ============ -->
+  <section class="situations" id="situations">
+    <div class="wrap">
+      <h2 class="section-title" data-reveal>Tu reconnais l'une de ces situations&nbsp;?</h2>
+      <div class="situations__grid">
+        <article class="situation-card" data-reveal>
+          <span class="situation-card__index">01</span>
+          <h3>Schémas répétitifs</h3>
+          <p>Les mêmes situations, les mêmes relations, les mêmes réactions. Tu ne comprends pas pourquoi tu reviens toujours au même point.</p>
+        </article>
+        <article class="situation-card" data-reveal>
+          <span class="situation-card__index">02</span>
+          <h3>Manque de confiance en soi</h3>
+          <p>Syndrome de l'imposteur, autocensure, difficulté à t'affirmer, sentiment de ne pas être légitime : tu te sais capable, mais quelque chose te retient.</p>
+        </article>
+        <article class="situation-card" data-reveal>
+          <span class="situation-card__index">03</span>
+          <h3>Gestion des émotions</h3>
+          <p>Certaines émotions prennent parfois beaucoup de place et peuvent influencer ton quotidien, tes relations ou tes décisions. Tu souhaites apprendre à les identifier, les accueillir et les traverser avec plus de sérénité.</p>
+        </article>
+        <article class="situation-card" data-reveal>
+          <span class="situation-card__index">04</span>
+          <h3>Dépendance affective &amp; relations toxiques</h3>
+          <p>Tes relations te coûtent plus qu'elles ne te nourrissent.</p>
+        </article>
+        <article class="situation-card" data-reveal>
+          <span class="situation-card__index">05</span>
+          <h3>Procrastination &amp; paralysie</h3>
+          <p>Tu sais ce que tu veux faire, mais tu repousses en permanence. L'inaction t'épuise autant que l'action et tu ne sais parfois même pas par où commencer.</p>
+        </article>
+        <article class="situation-card" data-reveal>
+          <span class="situation-card__index">06</span>
+          <h3>Identité et quête de sens</h3>
+          <p>Tu ressens un décalage entre la personne que tu es profondément et la vie que tu mènes aujourd'hui. Tu as besoin de clarifier qui tu es, ce qui te fait vibrer et la direction que tu souhaites donner à ton parcours.</p>
+        </article>
+      </div>
+      <a href="https://calendly.com/contact-mtragency/appel-meriem-tiar" class="btn btn--primary" target="_blank" rel="noopener" data-reveal>contact</a>
+    </div>
+  </section>
+
+  <!-- ============ ACCOMPAGNEMENT / PHILOSOPHIE (fusion mon rôle + approche) ============ -->
+  <section class="role grain" id="approche">
+    <span class="ghost-num" style="top:20px; right:4%;" aria-hidden="true">01</span>
+    <div class="role__media" data-reveal>
+      <img src="role-portrait.jpeg" alt="Meriem Tiar en séance" class="role-img">
+    </div>
+    <div class="role__grain"></div>
+    <div class="wrap">
+      <div class="role__intro">
+        <p class="eyebrow" data-reveal>mon accompagnement</p>
+        <p class="role__lead" data-reveal>Être le regard extérieur qui identifie les blocages, points d'amélioration, et outils clés pour accompagner ton évolution.</p>
+      </div>
+      <div class="role__body">
+        <h2 class="section-title section-title--light" data-reveal>affronter pour libérer</h2>
+        <p class="role__text" data-reveal>
+          Un espace d'écoute, sans jugement, où on affronte ce qui bloque pour pouvoir le traverser. Pas dans la douleur&nbsp;: avec structure, et de la bienveillance à chaque étape.
+        </p>
+      </div>
+      <ol class="steps">
+        <li class="steps__item" data-reveal>
+          <span class="steps__num steps__num--light">01</span>
+          <h3>Écoute &amp; exploration</h3>
+          <p>Un espace sans jugement où tes émotions sont entendues, et où on explore ensemble tes schémas, tes blessures et tes croyances.</p>
+        </li>
+        <li class="steps__item" data-reveal>
+          <span class="steps__num steps__num--light">02</span>
+          <h3>Prise de conscience</h3>
+          <p>La prise de conscience est déjà une transformation. On nomme, on valide, on relie les points entre eux.</p>
+        </li>
+        <li class="steps__item" data-reveal>
+          <span class="steps__num steps__num--light">03</span>
+          <h3>Décider &amp; agir</h3>
+          <p>Un plan d'action hyperconcret, adapté à ta situation, avec les bonnes ressources pour aller plus loin&nbsp;: y compris vers d'autres spécialistes quand ça compte.</p>
+        </li>
+        <li class="steps__item" data-reveal>
+          <span class="steps__num steps__num--light">04</span>
+          <h3>Incarner le changement</h3>
+          <p>On ancre les nouvelles postures dans ta réalité quotidienne, pour que la transformation soit durable.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ MA MÉTHODE (grille de piliers, style distinct) ============ -->
+  <section class="methode">
+    <span class="ghost-num section-light" style="top:-20px; left:2%;" aria-hidden="true">02</span>
+    <div class="wrap">
+      <p class="eyebrow" data-reveal>ma méthode</p>
+      <div class="pillars">
+        <div class="pillar" data-reveal>
+          <span class="pillar__badge">01</span>
+          <h3>Ancrée dans les résultats</h3>
+          <p>Chaque échange t'apporte quelque chose de concret. Pas de théorie sans application.</p>
+        </div>
+        <div class="pillar" data-reveal>
+          <span class="pillar__badge">02</span>
+          <h3>Une vraie méthodologie stratégique</h3>
+          <p>Diagnostic clair de tes forces et de ce qui te bloque, plan d'action structuré, mise en œuvre suivie avec rigueur.</p>
+        </div>
+        <div class="pillar" data-reveal>
+          <span class="pillar__badge">03</span>
+          <h3>Holistique</h3>
+          <p>Identité, corps, pensées, travail, relations&nbsp;: tout est interconnecté. On ne traite jamais un point isolé du reste.</p>
+        </div>
+        <div class="pillar" data-reveal>
+          <span class="pillar__badge">04</span>
+          <h3>Profondément transformatrice</h3>
+          <p>On ne reste pas en surface. On va chercher ce qui se joue vraiment&nbsp;: pour un changement qui dure.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ACCOMPAGNEMENT / SERVICES ============ -->
+  <section class="services" id="accompagnement">
+    <div class="wrap">
+      <h2 class="section-title" data-reveal>Accompagnement sur mesure</h2>
+      <div class="services__grid">
+
+        <article class="service-card" data-reveal>
+          <div class="service-card__media">
+            <img src="service-individuel.jpeg" alt="Coaching individuel" loading="lazy">
+          </div>
+          <div class="service-card__overlay"></div>
+          <div class="service-card__body">
+            <h3>coaching individuel</h3>
+            <p>Un espace entièrement dédié à toi, à ton rythme, pour aller au fond de ce qui te retient et construire un plan d'action personnalisé.</p>
+            <ul>
+              <li>Séances en ligne ou en présentiel</li>
+              <li>Écoute, analyse et plan d'action</li>
+              <li>Suivi personnalisé entre les séances</li>
+              <li>Orientation vers les bons spécialistes</li>
+            </ul>
+            <a href="https://calendly.com/contact-mtragency/appel-meriem-tiar" class="link-arrow" target="_blank" rel="noopener">En savoir plus →</a>
+          </div>
+        </article>
+
+        <article class="service-card" data-reveal>
+          <div class="service-card__media">
+            <img src="service-collectif.PNG" alt="Coaching collectif" loading="lazy">
+          </div>
+          <div class="service-card__overlay"></div>
+          <div class="service-card__body">
+            <h3>coaching collectif</h3>
+            <p>L'intelligence du groupe au service de ta transformation. Apprendre des expériences des autres, briser l'isolement et avancer ensemble.</p>
+            <ul>
+              <li>Groupe restreint &amp; bienveillant</li>
+              <li>Dynamique de pair à pair</li>
+              <li>Outils partagés applicables immédiatement</li>
+              <li>Format atelier ou programme structuré</li>
+            </ul>
+            <a href="https://calendly.com/contact-mtragency/appel-meriem-tiar" class="link-arrow" target="_blank" rel="noopener">En savoir plus →</a>
+          </div>
+        </article>
+
+        <article class="service-card" data-reveal>
+          <div class="service-card__media">
+            <img src="service-formation.png" alt="Formation, ateliers, masterclass" loading="lazy">
+          </div>
+          <div class="service-card__overlay"></div>
+          <div class="service-card__body">
+            <h3>formation, ateliers, masterclass</h3>
+            <p>Pour les organisations, écoles, associations ou collectifs qui souhaitent intégrer les outils de la transformation pour leurs équipes ou apprenants.</p>
+            <ul>
+              <li>Ateliers sur mesure et formats adaptables à vos besoins</li>
+              <li>Communication non violente, gestion de conflits, santé mentale au travail</li>
+              <li>Personal branding, image de marque, alignement professionnel</li>
+              <li>Approche pédagogique active</li>
+            </ul>
+            <a href="https://calendly.com/contact-mtragency/appel-meriem-tiar" class="link-arrow" target="_blank" rel="noopener">En savoir plus →</a>
+          </div>
+        </article>
+
+        <article class="service-card" data-reveal>
+          <div class="service-card__media">
+            <img src="service-interventions.jpeg" alt="Interventions, conférence, podcast" loading="lazy">
+          </div>
+          <div class="service-card__overlay"></div>
+          <div class="service-card__body">
+            <h3>interventions (conférence, podcast)</h3>
+            <p>Pour les podcasts, conférences et événements qui souhaitent explorer les chemins de la transformation personnelle et de l'alignement.</p>
+            <ul>
+              <li>Confiance, estime, identité et connaissance de soi</li>
+              <li>Dépassement des blocages et pensées limitantes</li>
+              <li>Alignement entre vision, valeurs et actions</li>
+              <li>Valorisation de son plein potentiel</li>
+            </ul>
+            <a href="https://calendly.com/contact-mtragency/appel-meriem-tiar" class="link-arrow" target="_blank" rel="noopener">En savoir plus →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ QUI SUIS-JE ============ -->
+  <section class="about" id="qui-suis-je">
+    <div class="about-hero grain" data-reveal>
+      <img src="bio-hero.jpeg" alt="Portrait de Meriem Tiar" class="about-hero__img">
+      <div class="about-hero__overlay"></div>
+      <div class="wrap">
+        <p class="about-hero__eyebrow">qui suis-je</p>
+        <h2 class="about-hero__name">Je suis Meriem.</h2>
+        <p class="about-hero__tagline">Coach, consultante, stratège — et avant tout, une personne qui a fait le travail sur elle-même.</p>
+      </div>
+    </div>
+
+    <div class="wrap about__grid">
+      <div class="about__content">
+        <div class="about__text" data-reveal>
+          <p>Ma philosophie s'ancre dans une quête d'émancipation présente depuis mon plus jeune âge. Ce fil conducteur traverse l'ensemble de mes engagements professionnels, créatifs et associatifs, toujours animé par la même aspiration&nbsp;: comment se libérer de tout ce qui nous a été imposé (société, traumatismes, conditionnements, attentes) pour devenir pleinement nous-mêmes&nbsp;?</p>
+          <p>Cette démarche, je l'ai d'abord mise au service de mon propre travail intérieur&nbsp;: psychologues, hypnothérapie, magnétisme, auriculothérapie, constellations familiales, EMDR, PNL, TCC, psychiatrie, énergéticiens… Six années de thérapie active, auxquelles s'ajoutent dix-sept ans de lectures, d'apprentissages et de formations autour du développement personnel. Ce long travail intérieur a été le meilleur investissement de ma vie. Traverser ces blocages et ces épreuves (attachements toxiques, traumatismes, anxiété chronique, deuil, diagnostic tardif de TDAH…) m'a permis de construire une vie profondément alignée avec qui je suis&nbsp;: libre, apaisée, authentique et entourée de relations saines, où je peux chaque jour exprimer ce qui m'anime, explorer mes multiples passions et créer avec sens.</p>
+          <p>Au début de mon parcours professionnel, je me suis naturellement tournée vers le marketing, une discipline fondée sur l'étude du comportement humain. En parallèle, je me suis investie dans l'accompagnement stratégique. En tant qu'intervenante et coach, j'ai accompagné des profils de tous âges et de tous horizons&nbsp;: étudiants, entrepreneurs, porteurs de projets, associations… J'ai observé la même chose à chaque fois&nbsp;: leur projet n'était jamais «&nbsp;juste&nbsp;» professionnel. Il prolongeait leur parcours de vie, incarnait leur passion et matérialisait leurs valeurs, leur mission et leurs zones de génie.</p>
+          <p>Mon accompagnement s'est alors approfondi. Au-delà de la stratégie, j'ai commencé à explorer avec eux leur identité, leur image et leur manière de travailler pour qu'elles soient plus alignées avec qui ils sont. J'ai vu que les véritables blocages se situaient souvent bien au-delà du projet lui-même&nbsp;: croyances limitantes, procrastination, mécanismes d'autosabotage, schémas hérités de l'enfance… J'ai compris que les difficultés financières, affectives ou professionnelles n'étaient souvent que la partie visible de l'iceberg.</p>
+          <p>C'est de ce croisement entre stratégie, pédagogie et développement personnel qu'est née ma méthode&nbsp;: une approche qui réunit stratégie, pédagogie et transformation personnelle, ancrée dans une vision holistique de l'épanouissement, où l'identité, le corps, les pensées, le travail, les relations, la créativité et l'image que nous projetons dialoguent en permanence.</p>
+        </div>
+
+        <div class="stats" data-reveal>
+          <div>
+            <span class="stat__num" data-count="6" data-suffix=" ans">0</span>
+            <span class="stat__label">de thérapie active</span>
+          </div>
+          <div>
+            <span class="stat__num" data-count="17" data-suffix=" ans">0</span>
+            <span class="stat__label">d'apprentissage &amp; formation en développement personnel</span>
+          </div>
+          <div>
+            <span class="stat__headline">Expertise en stratégie</span>
+            <span class="stat__label">Licence en gestion, masters en développement business, stratégie de marque &amp; comportement humain</span>
+          </div>
+          <div>
+            <span class="stat__headline">Certification en coaching</span>
+            <span class="stat__label">Pédagogies actives, auto-découverte, leadership intentionnel</span>
+          </div>
+        </div>
+
+        <p class="about__highlight reveal-words">À travers mes accompagnements comme mon podcast, mon ambition est de créer un espace de confiance, un refuge où les Voix habituellement basses osent parler plus fort et se confier. Un lieu où révéler ensemble les chemins, les visions et les destinées les moins évidents, les moins empruntés&nbsp;: les Voies Basses.</p>
+
+        <div class="social-links" data-reveal>
+          <a href="https://fr.linkedin.com/in/meriemtiarconsulting" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+          <a href="https://www.instagram.com/tiar_meriem/" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PODCAST ============ -->
+  <section class="podcast" id="podcast">
+    <div class="wrap">
+      <p class="eyebrow" data-reveal>le podcast</p>
+      <h2 class="section-title" data-reveal>Voies Basses, le podcast</h2>
+      <p class="podcast__intro" data-reveal>Les derniers épisodes et extraits, directement depuis Instagram.</p>
+      <div class="podcast__embed" data-reveal>
+        <div class="embedsocial-hashtag" data-ref="3b8c702d4d040d1d6c8f71a7411d67dbcbe56a19">
+          <a class="feed-powered-by-es feed-powered-by-es-feed-img es-widget-branding" href="https://embedsocial.com/instagram-widget/" target="_blank" title="Instagram widget">
+            <img src="https://embedsocial.com/cdn/icon/embedsocial-logo.webp" alt="EmbedSocial">
+            <div class="es-widget-branding-text">Instagram widget</div>
+          </a>
+        </div>
+        <script>
+          (function(d, s, id) {
+            var js;
+            if (d.getElementById(id)) { return; }
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://embedsocial.com/cdn/ht.js";
+            d.getElementsByTagName("head")[0].appendChild(js);
+          }(document, "script", "EmbedSocialHashtagScript"));
+        </script>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TÉMOIGNAGES ============ -->
+  <section class="testimonials" id="temoignages">
+    <div class="wrap">
+      <h2 class="section-title" data-reveal>ils m'ont fait confiance</h2>
+    </div>
+    <div class="testimonials__viewport" data-reveal>
+      <div class="testimonials__track" id="testimonialsTrack">
+
+        <article class="testimonial-card">
+          <span class="testimonial-card__quote">"</span>
+          <p class="testimonial-card__tag">Consulting — Formation</p>
+          <p class="testimonial-card__text">J'ai eu le plaisir de collaborer à plusieurs reprises avec Meriem et le résultat est sans appel. Professionnelle, fiable, à l'écoute, elle a cette capacité à allier le sérieux dans le travail et la bonne humeur. Meriem m'a formée de manière à ce que je sois autonome, m'a appris à créer des supports de communication, et à gérer mes projets de manière efficace.</p>
+          <p class="testimonial-card__name">Steve Mwela</p>
+          <p class="testimonial-card__role">Entrepreneur</p>
+        </article>
+
+        <article class="testimonial-card">
+          <span class="testimonial-card__quote">"</span>
+          <p class="testimonial-card__tag">Consulting — Formation</p>
+          <p class="testimonial-card__text">Meriem est une intervenante très professionnelle, réactive et qui propose des supports de formation très complets. Merci pour cette année passée à nos côtés 🙏</p>
+          <p class="testimonial-card__name">Yann Legoff</p>
+          <p class="testimonial-card__role">Fondateur / SkyCo — organisme de formation</p>
+        </article>
+
+        <article class="testimonial-card">
+          <span class="testimonial-card__quote">"</span>
+          <p class="testimonial-card__text">J'ai eu le plaisir de travailler avec Meriem sur plusieurs rendez-vous pour développer notre croissance digitale. Meriem m'a aidé à poser les bases du marketing digital et m'a formé à la gestion de projet. Grâce à son expertise, notre entreprise a pu structurer efficacement ses actions en ligne.</p>
+          <p class="testimonial-card__name">Joachim Larbaoui</p>
+          <p class="testimonial-card__role">Entrepreneur et fondateur, Elysium Capital</p>
+        </article>
+
+        <article class="testimonial-card">
+          <span class="testimonial-card__quote">"</span>
+          <p class="testimonial-card__text">Merci pour ta patience, ton écoute, ton soutien, ta bienveillance et ton sourire contagieux. J'ai adoré travailler avec toi et ai énormément appris ! Tu as développé une énorme envie et confiance en moi à travers ce projet.</p>
+          <p class="testimonial-card__name">Étudiante en Bachelor</p>
+          <p class="testimonial-card__role">Elysée Marbeuf</p>
+        </article>
+
+        <article class="testimonial-card">
+          <span class="testimonial-card__quote">"</span>
+          <p class="testimonial-card__text">Meriem m'a formée à tous les outils nécessaires pour que je puisse me débrouiller seule au lancement de mon activité. Même si certains termes m'étaient totalement étrangers, elle a pris le temps de tout décortiquer pour que je puisse bien tout comprendre.</p>
+          <p class="testimonial-card__name">Myriam Idlamhah</p>
+          <p class="testimonial-card__role">Entrepreneure — HSS Consulting &amp; Twin Touch Event</p>
+        </article>
+
+        <article class="testimonial-card">
+          <span class="testimonial-card__quote">"</span>
+          <p class="testimonial-card__text">Une très belle rencontre et un super accompagnement réalisé par Meriem, nous qui étions novices dans le domaine du marketing. Aujourd'hui nous fêtons le 1 an de notre boutique en ligne, et nous le devons en grande partie à ses conseils.</p>
+          <p class="testimonial-card__name">Nicolas Poinsot</p>
+          <p class="testimonial-card__role">Entrepreneur en e-commerce</p>
+        </article>
+
+      </div>
+      <div class="testimonials__controls">
+        <button type="button" class="testimonials__btn" id="prevTestimonial" aria-label="Témoignage précédent">←</button>
+        <div class="testimonials__dots" id="testimonialDots"></div>
+        <button type="button" class="testimonials__btn" id="nextTestimonial" aria-label="Témoignage suivant">→</button>
+      </div>
+    </div>
+
+  </section>
+
+</main>
+
+<!-- ============ FOOTER CTA ============ -->
+<footer class="footer grain">
+  <div class="wrap footer__inner">
+    <div class="footer__words" data-reveal>
+      <span>alignement</span>
+      <span class="italic">émancipation</span>
+      <span>épanouissement</span>
+    </div>
+    <h2 class="footer__title" data-reveal>becoming a living work of art</h2>
+    <p class="footer__signature" data-reveal>Devenir une œuvre d'art vivante, c'est assumer son identité dans toute sa complexité, oser expérimenter et construire sa vie selon ses propres codes.</p>
+    <a href="https://calendly.com/contact-mtragency/appel-meriem-tiar" class="btn btn--primary btn--lg" target="_blank" rel="noopener" data-reveal>contactez-moi</a>
+    <div class="footer__meta">
+      <span>© <span id="year"></span> Voies Basses — Meriem Tiar</span>
+      <div class="social-links">
+        <a href="https://fr.linkedin.com/in/meriemtiarconsulting" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.instagram.com/tiar_meriem/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
